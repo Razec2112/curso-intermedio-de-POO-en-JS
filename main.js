@@ -42,6 +42,7 @@ const juan = {
 //     configurable: false,
 // }) 
 
-Object.seal(juan)
+// Object.seal(juan)//cambia la propiedad configurable de todas las propiedades a false
+Object.freeze(juan)// cambia las propiedades configurable y writable de todas las propiedades a false
 
 console.log(Object.getOwnPropertyDescriptors(juan))
